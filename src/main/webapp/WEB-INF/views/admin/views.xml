@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="test" extends="default">
+    <put-attribute name="title" value="首页"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/test.jsp" />
+  </definition>
+  <definition name="admin/testresult" extends="default">
+    <put-attribute name="title" value="首页"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/testresult.jsp" />
+  </definition>
+  <definition name="admin/adminIndex" extends="default_admin">
+    <put-attribute name="title" value="首页"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/adminIndex.jsp" />
+  </definition>
+  <definition name="admin/login" extends="default">
+    <put-attribute name="title" value="后台登录"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/login.jsp" />
+  </definition>
+</tiles-definitions>

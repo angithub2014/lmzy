@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/news" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/news.jsp" />
+  </definition>
+  <definition name="admin/addNews" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/addNews.jsp" />
+  </definition>
+  <definition name="admin/addNewsType" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/addNewsType.jsp" />
+  </definition>
+  <definition name="admin/addNewsResult" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/addNewsResult.jsp" />
+  </definition>
+  <definition name="admin/newsContent" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/newsContent.jsp" />
+  </definition>
+  <definition name="admin/newsTypeContent" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/newsTypeContent.jsp" />
+  </definition>
+  <definition name="admin/newsType" extends="default_admin">
+    <put-attribute name="title" value="新闻资讯"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/news/newsType.jsp" />
+  </definition>
+</tiles-definitions>

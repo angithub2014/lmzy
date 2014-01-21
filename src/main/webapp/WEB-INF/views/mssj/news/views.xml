@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="mssj/news/news" extends="default_mssj">
+    <put-attribute name="title" value="新闻"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/news/news.jsp" />
+  </definition>
+  <definition name="mssj/news/newsDetail" extends="default_mssj">
+    <put-attribute name="title" value="新闻"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/news/newsDetail.jsp" />
+  </definition>
+</tiles-definitions>

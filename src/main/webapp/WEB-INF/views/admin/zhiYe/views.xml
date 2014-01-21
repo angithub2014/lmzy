@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/zhiYeHelp" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/zhiYeHelp.jsp" />
+  </definition>
+  <definition name="admin/zhiYe" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/zhiYe.jsp" />
+  </definition>
+  <definition name="admin/addZhiYeHelp" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/addZhiYeHelp.jsp" />
+  </definition>
+  <definition name="admin/addZhiYe" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/addZhiYe.jsp" />
+  </definition>
+  <definition name="admin/addZhiYeResult" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/addZhiYeResult.jsp" />
+  </definition>
+  <definition name="admin/zhiYeHelpContent" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/zhiYeHelpContent.jsp" />
+  </definition>
+  <definition name="admin/zhiYeContent" extends="default_admin">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/zhiYe/zhiYeContent.jsp" />
+  </definition>
+</tiles-definitions>

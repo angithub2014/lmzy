@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:Arial, Helvetica, sans-serif; background:#ECECEC}
+.clear{ height:0; overflow:hidden; clear:both;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:'\0020';display:block;height:0;font-size:0;visibility:hidden;clear:both;}
+
+
+/*登录页面*/
+.load-wrap{ background:url(../admin-images/load-bg.jpg) no-repeat; width:775px;margin:0 auto; height:368px; padding:350px 0 0 205px;}
+.load-wrap p.user-box{ font-weight:bold; font-size:14px; height:30px; margin-bottom:20px; position:relative}
+.load-wrap p.user-box input{ width:172px; height:30px; border:1px solid #A4A4A4; margin-bottom:18px; font-size:12px; line-height:30px; position:absolute; top:-6px; left:63px;}
+.load-wrap p .load-btn{ background:url(../admin-images/load-btn.jpg) no-repeat; width:97px; height:34px; font-weight:bold; font-size:14px; border:none; margin:10px 0 0 62px;}
+
+
+
+/*后台首页*/
+.admin{ background:#fff;}
+.admin-head{ height:151px; background:url(../admin-images/head-bg.jpg) repeat-x;}
+.admin-head .logo{ background:url(../admin-images/logo-bg.jpg) no-repeat; width:963px; margin:0 auto; height:22px; padding:120px 0 0 17px; font-weight:bold; color:#11406C; font-size:14px;}
+.admin-head .logo a{ padding-left:28px; text-decoration:none; color:#266FF9}
+.admin-head .logo a:hover{ text-decoration:underline}
+.admin-body{ width:980px; margin:0 auto; background:url(../admin-images/left-bg.jpg) repeat-y; padding-bottom:20px;}
+.admin-body .left{ float:left; width:180px;}
+.admin-body .left ul li{ text-align:center; background:url(../admin-images/nav-bg.jpg) no-repeat;}
+.admin-body .left ul li a{ height:39px; line-height:39px; width:176px; text-decoration:none; color:#153F6F; font-weight:bold; font-size:14px; display:inline-block}
+
+.admin-body .left ul li.cur{ background:url(../admin-images/dh-bg.jpg) no-repeat;}
+.admin-body .right{ width:800px; float:left; padding-top:10px;}
+/*上传*/
+.shangchuan-box{ border-collapse:collapse}
+.shangchuan-box tr td{ border:1px solid #ddd; line-height:26px; border-top:none; padding:0 0 0 38px; border-collapse:collapse}
+.leimu-box tr td{ padding:0; text-align:center;}
+.leimu-box tr td a{text-decoration:none; color:#0596E9;}
+.shangchuan-box tr.box-head{ background:url(../admin-images/box-headbg.jpg) repeat-x; font-weight:bold;padding:0 0 0 38px;}
+.shangchuan-box tr.xwlb td{ padding:0 0; text-align:center}
+.shangchuan-box tr.box-head td{border-top:1px solid #ddd;}
+.shangchuan-box tr td input{ border:1px solid #AABDCE; width:124px; height:19px; line-height:19px; background:url(../admin-images/input-bg.jpg) repeat-x;}
+.shangchuan-box tr td select{border:1px solid #AABDCE;height:19px; line-height:19px; background:url(../admin-images/input-bg.jpg) repeat-x;}
+.shangchuan-box tr td .wenjian{ background:url(../admin-images/shangchuan.jpg) no-repeat; height:22px; display:inline-block; z-index:2}
+.shangchuan-box tr td .wenjian input{opacity:0;filter:alpha(opacity=0); border:0; width:200px;}
+
+.shangchuan-box tr td textarea{border:1px solid #AABDCE;; line-height:20px; width:360px; margin-bottom:10px;}
+.shangchuan-box tr td a{ text-decoration:none;color:#0596E9;}
+.addbtn{ width:49px; height:19px; text-align:center; line-height:19px; background:url(../admin-images/add-bg.jpg) repeat-x; color:#0596E9; border:1px solid #AABDCE; margin:10px 0 0 108px;}
+
+.page{ height:30px; line-height:30px; padding-top:15px; text-align:center;}
+.page a{text-decoration:none; color:#153F6F; padding:0 20px;}
+.lb-head{ padding-left:50px; padding-bottom:10px;}
+.lb-head a{text-decoration:none;color:#0596E9;}
+.lb-head .xinxitext{border:1px solid #AABDCE; width:85px; height:19px; line-height:19px; background:url(../admin-images/input-bg.jpg) repeat-x; margin-right:15px;}
+
+.leimu-tit{ padding-left:48px; font-weight:bold;color:#0596E9; margin-bottom:8px;}
+
+.addbtn-2{ width:49px; height:19px; text-align:center; line-height:19px; background:url(../admin-images/add-bg.jpg) repeat-x; color:#0596E9; border:1px solid #AABDCE; margin:10px 0 0 108px; display:inline-block; text-decoration:none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

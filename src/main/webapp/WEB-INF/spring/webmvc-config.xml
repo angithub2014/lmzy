@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:p=" http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+    <context:property-placeholder location="classpath*:META-INF/spring/*.properties"/>
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<resources mapping="/resources/**" location="/resources/" />
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources -->
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<view-controller path="/index" view-name="index"/>
+	<view-controller path="/register" view-name="register"/>
+	<view-controller path="/registerSuccess" view-name="registerSuccess"/>
+	<view-controller path="/login" view-name="login"/>
+	<view-controller path="/test" view-name="test"/>
+	<view-controller path="/findPassWord" view-name="findPassWord"/>
+	<view-controller path="/checkCode" view-name="checkCode"/>
+	<view-controller path="/mssj/shop" view-name="mssj/shop"/>
+	<!-- 后台 -->
+	<view-controller path="/admin/login" view-name="admin/login"/>
+	<view-controller path="/admin/addNews.do" view-name="admin/addNews"/>
+	<view-controller path="/admin/addFuBenHelp.do" view-name="admin/addFuBenHelp"/>
+	<view-controller path="/admin/addFuBen.do" view-name="admin/addFuBen"/>
+	<view-controller path="/admin/addZhiYe.do" view-name="admin/addZhiYe"/>
+	<view-controller path="/admin/addZhaoMu.do" view-name="admin/addZhaoMu"/>
+	<view-controller path="/admin/addTeam.do" view-name="admin/addTeam"/>
+	<view-controller path="/admin/addShiPinType.do" view-name="admin/addShiPinType"/>
+	<view-controller path="/admin/addNewsType.do" view-name="admin/addNewsType"/>
+	<view-controller path="/admin/addDuiYuanType.do" view-name="admin/addDuiYuanType"/>
+	
+	<beans:bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" id="tilesViewResolver">
+	    <beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"/>
+	</beans:bean>
+	<beans:bean class="org.springframework.web.servlet.view.tiles2.TilesConfigurer" id="tilesConfigurer">
+	    <beans:property name="definitions">
+	      <beans:list>
+	        <beans:value>/WEB-INF/layouts/layouts.xml</beans:value>
+	        <!-- Scan views directory for Tiles configurations -->
+	      <beans:value>/WEB-INF/views/**/views.xml</beans:value>
+	    </beans:list>
+	  </beans:property>
+	</beans:bean>
+<!-- 对静态资源文件的访问 方案一 （二选一） -->
+<!--<default-servlet-handler/>-->
+<!-- 对静态资源文件的访问 方案二 （二选一）-->
+<resources mapping="/images/**" location="/images/" cache-period="31556926"/>
+<resources mapping="/js/**" location="/js/" cache-period="31556926"/>
+<resources mapping="/css/**" location="/css/" cache-period="31556926"/>
+	<!-- 拦截器 -->
+	
+	<interceptors >
+		<beans:bean class="com.lmzy.core.filter.MyInteceptor" />
+	</interceptors>
+	<!-- 全局异常处理 -->
+	<beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver" >
+		<beans:property name="exceptionMappings">
+			<beans:props>
+				<beans:prop key="IOException">login</beans:prop>  
+            	<beans:prop key="java.sql.SQLException">login</beans:prop>
+            	<beans:prop key="NullPointerException">error</beans:prop>
+			</beans:props>
+		</beans:property>
+		<beans:property name="defaultErrorView">
+			<beans:value>error</beans:value>
+		</beans:property>
+		<beans:property name="defaultStatusCode">
+			<beans:value>500</beans:value>
+		</beans:property>
+		<beans:property name="warnLogCategory">    
+        <beans:value>org.springframework.web.servlet.handler.SimpleMappingExceptionResolver</beans:value>  
+    </beans:property>  
+	</beans:bean>
+	<!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 --> 
+        <beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> 
+            <!-- 指定所上传文件的总大小不能超过200KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和 --> 
+            <beans:property name="maxUploadSize" value="200000"/>
+        </beans:bean>
+	<context:component-scan base-package="com.lmzy" />
+</beans:beans>

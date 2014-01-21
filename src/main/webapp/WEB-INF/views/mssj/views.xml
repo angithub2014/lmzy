@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="mssjIndex" extends="default_mssj">
+    <put-attribute name="title" value="首页"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/mssjIndex.jsp" />
+  </definition>
+  <definition name="mssj/weibo" extends="default_mssj">
+    <put-attribute name="title" value="微博"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/weibo.jsp" />
+  </definition>
+  <definition name="mssj/aboutUs" extends="default_mssj">
+    <put-attribute name="title" value="关于我们"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/aboutUs.jsp" />
+  </definition>
+</tiles-definitions>

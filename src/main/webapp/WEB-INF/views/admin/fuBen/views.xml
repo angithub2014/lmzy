@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/fuBenHelp" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/fuBenHelp.jsp" />
+  </definition>
+  <definition name="admin/fuBen" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/fuBen.jsp" />
+  </definition>
+  <definition name="admin/addFuBenHelp" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/addFuBenHelp.jsp" />
+  </definition>
+  <definition name="admin/addFuBen" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/addFuBen.jsp" />
+  </definition>
+  <definition name="admin/addFuBenResult" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/addFuBenResult.jsp" />
+  </definition>
+  <definition name="admin/fuBenHelpContent" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/fuBenHelpContent.jsp" />
+  </definition>
+  <definition name="admin/fuBenContent" extends="default_admin">
+    <put-attribute name="title" value="副本攻略"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/fuBen/fuBenContent.jsp" />
+  </definition>
+</tiles-definitions>

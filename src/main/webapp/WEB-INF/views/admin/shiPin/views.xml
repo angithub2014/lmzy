@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/shiPin" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/shiPin.jsp" />
+  </definition>
+  <definition name="admin/shiPinType" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/shiPinType.jsp" />
+  </definition>
+  <definition name="admin/addShiPin" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/addShiPin.jsp" />
+  </definition>
+  <definition name="admin/addShiPinType" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/addShiPinType.jsp" />
+  </definition>
+  <definition name="admin/addShiPinResult" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/addShiPinResult.jsp" />
+  </definition>
+  <definition name="admin/shiPinContent" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/shiPinContent.jsp" />
+  </definition>
+  <definition name="admin/shiPinTypeContent" extends="default_admin">
+    <put-attribute name="title" value="游戏视频"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/shiPin/shiPinTypeContent.jsp" />
+  </definition>
+</tiles-definitions>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+    <definition name="registerSuccess" extends="default">
+    <put-attribute name="title" value="注册"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/registerSuccess.jsp" />
+  </definition>
+     <definition name="register" extends="default">
+    <put-attribute name="title" value="注册"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/register.jsp" />
+  </definition>
+  <definition name="login" extends="default">
+    <put-attribute name="title" value="登录"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/login.jsp" />
+  </definition>
+  <definition name="findPassWord" extends="default">
+    <put-attribute name="title" value="找回密码"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/findPassWord.jsp" />
+  </definition>
+  <definition name="findPassWordResult" extends="default">
+    <put-attribute name="title" value="找回密码"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/findPassWordResult.jsp" />
+  </definition>
+  <definition name="resetPassWord" extends="default">
+    <put-attribute name="title" value="重置密码"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/resetPassWord.jsp" />
+  </definition>
+  <definition name="resetPassWordResult" extends="default">
+    <put-attribute name="title" value="重置密码"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/resetPassWordResult.jsp" />
+  </definition>
+  <definition name="modifyPassWord" extends="default">
+    <put-attribute name="title" value="修改密码"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/userInfo/modifyPassWord.jsp" />
+  </definition>
+</tiles-definitions>

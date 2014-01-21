@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/aboutUs" extends="default_admin">
+    <put-attribute name="title" value="关于我们"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/aboutUs.jsp" />
+  </definition>
+  <definition name="admin/addAboutUsResult" extends="default_admin">
+    <put-attribute name="title" value="关于我们"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/addAboutUsResult.jsp" />
+  </definition>
+  <definition name="admin/addFriendShip" extends="default_admin">
+    <put-attribute name="title" value="友情链接"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/addFriendShip.jsp" />
+  </definition>
+  <definition name="admin/addFriendShipResult" extends="default_admin">
+    <put-attribute name="title" value="友情链接"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/addFriendShipResult.jsp" />
+  </definition>
+  <definition name="admin/friendShip" extends="default_admin">
+    <put-attribute name="title" value="友情链接"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/friendShip.jsp" />
+  </definition>
+  <definition name="admin/friendShipContent" extends="default_admin">
+    <put-attribute name="title" value="友情链接"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/other/friendShipContent.jsp" />
+  </definition>
+
+</tiles-definitions>

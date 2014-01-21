@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+  <definition name="default_mssj" template="/WEB-INF/layouts/default_mssj.jsp">
+    <put-attribute name="header_mssj" value="/WEB-INF/views/mssj/header_mssj.jsp" />
+    <put-attribute name="right_mssj" value="/WEB-INF/views/mssj/right_mssj.jsp" />
+    <put-attribute name="footer_mssj" value="/WEB-INF/views/mssj/footer_mssj.jsp" />
+  </definition>
+  <definition name="default" template="/WEB-INF/layouts/default.jsp">
+  </definition>
+  <definition name="default_admin" template="/WEB-INF/layouts/default_admin.jsp">
+    <put-attribute name="header_admin" value="/WEB-INF/views/admin/header_admin.jsp" />
+    <put-attribute name="left_admin" value="/WEB-INF/views/admin/left_admin.jsp" />
+    <put-attribute name="footer_admin" value="/WEB-INF/views/admin/footer_admin.jsp" />
+  </definition>
+</tiles-definitions>

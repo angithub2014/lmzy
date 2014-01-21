@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/duiYuan" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/duiYuan.jsp" />
+  </definition>
+  <definition name="admin/duiYuanType" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/duiYuanType.jsp" />
+  </definition>
+  <definition name="admin/addDuiYuan" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/addDuiYuan.jsp" />
+  </definition>
+  <definition name="admin/addDuiYuanType" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/addDuiYuanType.jsp" />
+  </definition>
+  <definition name="admin/addDuiYuanResult" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/addDuiYuanResult.jsp" />
+  </definition>
+  <definition name="admin/duiYuanContent" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/duiYuanContent.jsp" />
+  </definition>
+  <definition name="admin/duiYuanTypeContent" extends="default_admin">
+    <put-attribute name="title" value="队员信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/duiYuan/duiYuanTypeContent.jsp" />
+  </definition>
+</tiles-definitions>

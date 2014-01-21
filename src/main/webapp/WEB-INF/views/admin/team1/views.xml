@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="admin/team" extends="default_admin">
+    <put-attribute name="title" value="队员介绍"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/team/team.jsp" />
+  </definition>
+  <definition name="admin/addTeam" extends="default_admin">
+    <put-attribute name="title" value="队员介绍"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/team/addTeam.jsp" />
+  </definition>
+  <definition name="admin/addTeamResult" extends="default_admin">
+    <put-attribute name="title" value="队员介绍"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/team/addTeamResult.jsp" />
+  </definition>
+  <definition name="admin/teamContent" extends="default_admin">
+    <put-attribute name="title" value="队员介绍"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/admin/team/teamContent.jsp" />
+  </definition>
+</tiles-definitions>

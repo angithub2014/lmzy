@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="mssj/recruit/recruit" extends="default_mssj">
+    <put-attribute name="title" value="招募信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/recruit/recruit.jsp" />
+  </definition>
+  <definition name="mssj/recruit/recruitDetail" extends="default_mssj">
+    <put-attribute name="title" value="招募信息"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/recruit/recruitDetail.jsp" />
+  </definition>
+</tiles-definitions>

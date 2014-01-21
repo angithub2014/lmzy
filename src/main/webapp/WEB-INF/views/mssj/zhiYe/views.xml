@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+  <definition name="mssj/zhiYe/zhiYe" extends="default_mssj">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/zhiYe/zhiYe.jsp" />
+  </definition>
+  <definition name="mssj/zhiYe/zhiYeMore" extends="default_mssj">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/zhiYe/zhiYeMore.jsp" />
+  </definition>
+  <definition name="mssj/zhiYe/zhiYeDetail" extends="default_mssj">
+    <put-attribute name="title" value="职业指南"></put-attribute>
+    <put-attribute name="body" value="/WEB-INF/views/mssj/zhiYe/zhiYeDetail.jsp" />
+  </definition>
+</tiles-definitions>
